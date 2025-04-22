@@ -81,6 +81,121 @@ A comprehensive Learning Management System designed specifically for Indian univ
   - Role-based access control
   - Comprehensive audit logs for all critical operations
 
+## Development Team & Timeline
+
+### Team Structure
+- **Project Lead (1)**: Oversees entire project, client communication, and resource management
+- **UI/UX Designer (1)**: Creates wireframes, user flows, and design system
+- **Frontend Developers (3)**:
+  - Lead Frontend Developer: Architecture and component library development
+  - Frontend Developer (2): Feature implementation and testing
+- **Backend Developers (3)**:
+  - Lead Backend Developer: API architecture and database design
+  - Backend Developer (2): API implementation and integration
+- **AI Integration Specialists (2)**:
+  - AI Integration Lead: Oversees AI service integrations, prompt engineering, and fine-tuning
+  - AI Developer: Implements AI features, develops model prompts, and optimizes API usage
+- **DevOps Engineer (1)**: Infrastructure setup, CI/CD pipeline, and deployment automation
+- **QA Engineers (3)**:
+  - Senior QA Engineer: Test planning, QA strategy, and test automation framework
+  - Junior QA Engineers (2): Manual testing, test case execution, and basic automation
+
+### Team Salary Structure
+
+**Team Salary Overview:**
+The total development team consists of 14 members with salary ranges between ₹20,000 to ₹1,00,000 per month based on role and experience level. The project lead and senior technical leads are positioned at the higher end of the spectrum, while junior developers and QA engineers are at the lower to mid-range.
+
+**Monthly Salary Breakdown:**
+- Project Lead (5+ years experience): ₹80,000 - ₹1,00,000
+- Technical Leads (Frontend, Backend, AI - 5+ years experience): ₹60,000 - ₹90,000
+- Mid-level Developers (Frontend, Backend, AI - 2-4 years): ₹40,000 - ₹65,000
+- Junior Developers (0-2 years): ₹20,000 - ₹35,000
+- Senior QA Engineer (4+ years): ₹50,000 - ₹75,000
+- Junior QA Engineers (0-2 years): ₹20,000 - ₹30,000
+- UI/UX Designer (3-5 years): ₹45,000 - ₹70,000
+- DevOps Engineer (3-5 years): ₹50,000 - ₹80,000
+
+**Total Project Cost:**
+With this salary structure, the estimated monthly team cost ranges from ₹5,00,000 to ₹7,50,000, bringing the total 5-month project cost to approximately ₹25,00,000 to ₹37,50,000.
+
+**Cost Optimization Strategies:**
+- Hiring from tier-2/3 cities can reduce costs by 15-20%
+- Utilizing freshers and interns for junior positions with mentorship
+- Partial remote work to reduce office infrastructure costs
+- Performance-based incentives instead of higher fixed salaries
+- Part-time specialists for roles not requiring full-time commitment
+
+This salary structure is designed to be competitive while remaining cost-effective for educational institutions and aligned with budget constraints of the Indian education sector.
+
+### Development Timeline (4-5 Months)
+
+#### Month 1: Planning & Foundation
+- **Week 1-2**: 
+  - Requirements analysis and refinement
+  - Technical architecture design
+  - Database schema design
+  - UI/UX wireframing and prototyping
+- **Week 3-4**:
+  - Development environment setup
+  - CI/CD pipeline configuration
+  - Core infrastructure deployment
+  - Design system and component library development
+
+#### Month 2: Core Functionality
+- **Week 1-2**:
+  - Authentication and user management
+  - Basic course management functionality
+  - File upload and storage integration
+  - Database implementation and initial migrations
+- **Week 3-4**:
+  - Video content platform core features
+  - Assessment system foundation
+  - Student dashboard basic implementation
+  - Faculty dashboard basic implementation
+
+#### Month 3: Advanced Features
+- **Week 1-2**:
+  - Attendance tracking system
+  - In-video quiz functionality
+  - Discussion forums and collaboration tools
+  - Notification system implementation
+- **Week 3-4**:
+  - AI service integrations (chatbot, content analysis)
+  - Analytics dashboard implementation
+  - Live event functionality
+  - Mobile responsiveness and optimization
+
+#### Month 4: Completion & Quality Assurance
+- **Week 1-2**:
+  - Administrator dashboard and reporting
+  - Advanced analytics and data visualization
+  - API optimization and performance tuning
+  - Comprehensive testing and bug fixes
+- **Week 3-4**:
+  - Security audit and vulnerability remediation
+  - Performance optimization and load testing
+  - Documentation completion
+  - User acceptance testing (UAT)
+
+#### Month 5 (if needed): Polishing & Deployment
+- **Week 1-2**:
+  - Final bug fixes and refinements
+  - Production environment setup
+  - Data migration tools and procedures
+  - System integration testing
+- **Week 3-4**:
+  - Deployment to production
+  - Monitoring setup and performance validation
+  - User training materials and documentation
+  - Project handover and knowledge transfer
+
+### Team Collaboration & Methodology
+- **Development Methodology**: Agile Scrum with 2-week sprints
+- **Project Management Tools**: Jira for task tracking, Confluence for documentation
+- **Communication**: Daily standups, bi-weekly sprint planning and retrospectives
+- **Code Quality Assurance**: Pull request reviews, automated testing in CI/CD
+- **Knowledge Sharing**: Weekly tech talks and documentation updates
+
 ## Advanced AI Features (Future Roadmap)
 
 ### NeuroLearn™ Adaptive Learning System
