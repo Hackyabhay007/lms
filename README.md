@@ -118,14 +118,56 @@ The total development team consists of 14 members with salary ranges between ₹
 **Total Project Cost:**
 With this salary structure, the estimated monthly team cost ranges from ₹5,00,000 to ₹7,50,000, bringing the total 5-month project cost to approximately ₹25,00,000 to ₹37,50,000.
 
-**Cost Optimization Strategies:**
-- Hiring from tier-2/3 cities can reduce costs by 15-20%
-- Utilizing freshers and interns for junior positions with mentorship
-- Partial remote work to reduce office infrastructure costs
-- Performance-based incentives instead of higher fixed salaries
-- Part-time specialists for roles not requiring full-time commitment
 
-This salary structure is designed to be competitive while remaining cost-effective for educational institutions and aligned with budget constraints of the Indian education sector.
+### Server Requirements & Infrastructure Costs
+
+**Hosting Requirements for 50K-100K Users:**
+
+**AWS Infrastructure (Monthly Costs in INR):**
+
+**Compute Resources:**
+- **Web Server**: 2-4 t3.medium EC2 instances (2 vCPU, 4GB RAM each)
+  - Cost: ₹5,000 - ₹10,000/month with Reserved Instance pricing
+  - Auto-scaling enabled for peak hours only
+- **API Server**: 2-4 t3.medium EC2 instances
+  - Cost: ₹5,000 - ₹10,000/month with Reserved Instance pricing
+- **Background Workers**: 1-2 t3.small instances (2 vCPU, 2GB RAM)
+  - Cost: ₹2,000 - ₹4,000/month
+
+**Database:**
+- **MongoDB Atlas**: M10 cluster (shared tier) with 10GB storage
+  - Cost: ₹7,000 - ₹10,000/month
+- **Redis Cache**: ElastiCache t3.micro (1GB)
+  - Cost: ₹3,000 - ₹4,000/month
+
+**Storage & CDN:**
+- **S3 Storage**: For documents, videos, and backups
+  - Estimated 500GB storage: ₹1,000/month
+- **CloudFront CDN**: For content delivery
+  - Estimated 2TB transfer: ₹8,000/month
+  - Intelligent compression and caching to reduce bandwidth
+
+**Additional Services:**
+- **Load Balancer**: Application Load Balancer
+  - Cost: ₹2,500/month
+- **Route 53**: DNS management
+  - Cost: ₹500/month
+- **CloudWatch**: Basic monitoring
+  - Cost: ₹1,000/month
+
+**Third-Party Services:**
+- **AI APIs** (OpenAI, Google Cloud): Usage-based pricing
+  - Limited query volume with caching
+  - Cost: ₹15,000 - ₹25,000/month
+- **Email Service** (SendGrid):
+  - 50,000 emails/month: ₹2,000/month
+- **SMS Service** (MSG91):
+  - 10,000 SMS/month: ₹3,000/month
+
+**Total Infrastructure Costs:**
+- **Monthly**: ₹55,000 - ₹81,000 
+- **Annual**: ₹6,60,000 - ₹9,72,000
+
 
 ### Development Timeline (4-5 Months)
 
