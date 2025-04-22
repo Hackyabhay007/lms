@@ -118,58 +118,93 @@ The total development team consists of 14 members with salary ranges between ₹
 **Total Project Cost:**
 With this salary structure, the estimated monthly team cost ranges from ₹5,00,000 to ₹7,50,000, bringing the total 5-month project cost to approximately ₹25,00,000 to ₹37,50,000.
 
+## Server Requirements & Infrastructure Costs
 
-### Server Requirements & Infrastructure Costs
-
-**Hosting Requirements for 50K-100K Users:**
+### Server Infrastructure for 50K-100K Users
 
 **AWS Infrastructure (Monthly Costs in INR):**
 
 **Compute Resources:**
-- **Web Server**: 2-4 t3.medium EC2 instances (2 vCPU, 4GB RAM each)
-  - Cost: ₹5,000 - ₹10,000/month with Reserved Instance pricing
-  - Auto-scaling enabled for peak hours only
-- **API Server**: 2-4 t3.medium EC2 instances
-  - Cost: ₹5,000 - ₹10,000/month with Reserved Instance pricing
+- **Web Servers**: 2-4 t3.medium EC2 instances (2 vCPU, 4GB RAM each)
+  - Cost: ₹2,500 - ₹5,000/month with Reserved Instance pricing
+  - Auto-scaling enabled with scheduled scaling for peak hours only
+- **API Servers**: 2-4 t3.medium EC2 instances
+  - Cost: ₹2,500 - ₹5,000/month with Reserved Instance pricing
 - **Background Workers**: 1-2 t3.small instances (2 vCPU, 2GB RAM)
-  - Cost: ₹2,000 - ₹4,000/month
+  - Cost: ₹1,000 - ₹2,000/month
 
 **Database:**
-- **MongoDB Atlas**: M10 cluster (shared tier) with 10GB storage
-  - Cost: ₹7,000 - ₹10,000/month
+- **MongoDB Atlas M10**: 10GB storage, 2GB RAM, 2 vCPUs
+  - Cost: ₹4,200/month (₹56.94 × ₹74 exchange rate)
+  - Support for up to ~50K users with proper indexing
+- **MongoDB Atlas M20** (For scaling to 100K users): 20GB storage, 4GB RAM
+  - Cost: ₹10,800/month (₹146.72 × ₹74 exchange rate)
 - **Redis Cache**: ElastiCache t3.micro (1GB)
-  - Cost: ₹3,000 - ₹4,000/month
+  - Cost: ₹1,500 - ₹2,000/month
 
 **Storage & CDN:**
 - **S3 Storage**: For documents, videos, and backups
-  - Estimated 500GB storage: ₹1,000/month
+  - Estimated 500GB storage: ₹800/month
 - **CloudFront CDN**: For content delivery
-  - Estimated 2TB transfer: ₹8,000/month
+  - Estimated 2TB transfer: ₹6,000/month
   - Intelligent compression and caching to reduce bandwidth
 
 **Additional Services:**
 - **Load Balancer**: Application Load Balancer
-  - Cost: ₹2,500/month
+  - Cost: ₹1,800/month
 - **Route 53**: DNS management
-  - Cost: ₹500/month
+  - Cost: ₹400/month
 - **CloudWatch**: Basic monitoring
-  - Cost: ₹1,000/month
+  - Cost: ₹800/month
 
 **Third-Party Services:**
-- **AI APIs** (OpenAI, Google Cloud): Usage-based pricing
-  - Limited query volume with caching
-  - Cost: ₹15,000 - ₹25,000/month
+- **AI APIs** (OpenAI): For chatbot and content analysis
+  - GPT-4o-mini: ₹0.15 per 1M input tokens, ₹0.60 per 1M output tokens
+  - Caching of common queries and limited usage
+  - Estimated monthly cost: ₹8,000 - ₹12,000
 - **Email Service** (SendGrid):
-  - 50,000 emails/month: ₹2,000/month
+  - 50,000 emails/month: ₹1,500/month
 - **SMS Service** (MSG91):
-  - 10,000 SMS/month: ₹3,000/month
+  - 10,000 SMS/month: ₹2,000/month
 
 **Total Infrastructure Costs:**
-- **Monthly**: ₹55,000 - ₹81,000 
-- **Annual**: ₹6,60,000 - ₹9,72,000
+- **Monthly (50K Users)**: ₹30,000 - ₹40,000
+- **Monthly (100K Users)**: ₹40,000 - ₹55,000
+- **Annual**: ₹3,60,000 - ₹6,60,000
 
+**Per-User Cost Analysis:**
+- **Monthly Cost Per User:**
+  - For 50,000 users: ₹0.60 - ₹0.80 per user/month
+  - For 100,000 users: ₹0.40 - ₹0.55 per user/month
+- **Annual Cost Per User:**
+  - For 50,000 users: ₹7.20 - ₹9.60 per user/year
+  - For 100,000 users: ₹4.80 - ₹6.60 per user/year
 
-### Development Timeline (4-5 Months)
+### Resource Optimization Strategies
+
+**Infrastructure Optimization:**
+- **Reserved Instances**: 1-year commitments for predictable workloads (30-40% savings)
+- **Spot Instances**: For background processing jobs (60-90% savings)
+- **Auto-Scaling**: Configure to scale down during nights and weekends
+- **Multi-AZ Only for Critical Components**: Use single AZ for non-critical services
+
+**Database Optimization:**
+- **MongoDB Indexing**: Proper index strategy to minimize query costs
+- **Query Optimization**: Regular performance analysis and query tuning
+- **Data Archiving**: Move older data to lower-cost storage tiers
+- **Sharding Strategy**: Plan for horizontal scaling beyond 100K users
+
+**Application Optimization:**
+- **Aggressive Caching**: Implement Redis caching for frequent data access
+- **Content Delivery**: Use CDN with browser caching (1 week TTL)
+- **Image and Video Processing**: Server-side optimization for all media
+- **API Rate Limiting**: Prevent abuse and control costs
+- **Batch Processing**: Aggregate background tasks to minimize resource usage
+
+**Scaling Economics:**
+The infrastructure is designed to handle 50K users initially with the ability to scale to 100K users with minimal additional investment. The per-user cost decreases significantly as user count increases, demonstrating good economies of scale.
+
+## Development Timeline (4-5 Months)
 
 #### Month 1: Planning & Foundation
 - **Week 1-2**: 
