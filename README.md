@@ -47,11 +47,23 @@ A comprehensive Learning Management System designed specifically for Indian univ
   - OpenAI API with usage limits and caching of common queries
   - AWS Rekognition with optimized image sizes for attendance verification
   - Google Cloud Natural Language with batched requests for content analysis
+  - **Custom AI Models** (self-hosted):
+    - Domain-specific language models fine-tuned for educational content
+    - Personalized recommendation models for learning path optimization
+    - Plagiarism detection models trained on Indian academic content
+    - Regional language processing models for Indian languages
+    - Engagement prediction models based on user interaction patterns
 - **Video Conferencing**: Zoom API for live sessions and webinars with regional routing
 - **Authentication**: Aadhaar Authentication API and DigiLocker API
 - **Educational Content**: SWAYAM and NPTEL APIs for content integration
 - **Payments**: RazorPay API and UPI for fee transactions
 - **Notifications**: SendGrid for emails, MSG91 for SMS with batched sending
+- **Proctoring API** (Eklavvya): For secure exam monitoring and assessment integrity
+  - AI-based proctoring with facial recognition and screen monitoring
+  - Integration with assessment system for exam integrity
+  - Multi-language support for Indian regional languages
+  - API-based integration with LMS assessment system
+  - Estimated monthly cost: ₹15,000 - ₹25,000 (based on exam volume)
 
 ### DevOps & Deployment
 - **Containerization**: Docker with multi-stage builds for smaller images
@@ -95,6 +107,14 @@ A comprehensive Learning Management System designed specifically for Indian univ
 - **AI Integration Specialists (2)**:
   - AI Integration Lead: Oversees AI service integrations, prompt engineering, and fine-tuning
   - AI Developer: Implements AI features, develops model prompts, and optimizes API usage
+  - **ML Engineer**: Specializes in training and optimizing custom deep learning models
+    - Experience with PyTorch/TensorFlow and model deployment at scale
+    - Expertise in model compression techniques and edge deployment
+    - Knowledge of Indian language models and educational domain adaptation
+  - **AI DevOps Engineer**: Manages ML infrastructure and deployment pipelines
+    - Experience with GPU infrastructure optimization and cost management
+    - Knowledge of ML monitoring and performance optimization
+    - Expertise in MLOps tools and CI/CD for model deployment
 - **DevOps Engineer (1)**: Infrastructure setup, CI/CD pipeline, and deployment automation
 - **QA Engineers (3)**:
   - Senior QA Engineer: Test planning, QA strategy, and test automation framework
@@ -132,6 +152,17 @@ With this salary structure, the estimated monthly team cost ranges from ₹5,00,
   - Cost: ₹2,500 - ₹5,000/month with Reserved Instance pricing
 - **Background Workers**: 1-2 t3.small instances (2 vCPU, 2GB RAM)
   - Cost: ₹1,000 - ₹2,000/month
+- **GPU Instances for AI Models**:
+  - **Training**: 1 g4dn.xlarge instance (4 vCPU, 16GB RAM, 1 NVIDIA T4 GPU)
+    - Cost: ₹18,000/month (₹24/hour × 750 hours)
+    - Used for periodic batch training of custom models
+    - Spot instances for non-time-critical training (60-70% cost reduction)
+  - **Inference**: 1 g4dn.xlarge instance on demand
+    - Cost: ₹9,000/month (₹24/hour × 375 hours)
+    - Used for serving custom models during peak periods
+    - Auto-scaling based on demand patterns
+  - **Model Optimization**: TensorRT and ONNX Runtime for efficient inference
+    - Model quantization and pruning for reduced resource requirements
 
 **Database:**
 - **MongoDB Atlas M10**: 10GB storage, 2GB RAM, 2 vCPUs
@@ -144,10 +175,13 @@ With this salary structure, the estimated monthly team cost ranges from ₹5,00,
 
 **Storage & CDN:**
 - **S3 Storage**: For documents, videos, and backups
-  - Estimated 500GB storage: ₹800/month
+  - Estimated 5TB storage with tiered storage classes: ₹7,500/month
+  - Standard storage for recent content, Infrequent Access for older content
+  - Intelligent lifecycle policies to move content to Glacier after 1 year
 - **CloudFront CDN**: For content delivery
-  - Estimated 2TB transfer: ₹6,000/month
+  - Estimated 10TB transfer: ₹25,000/month
   - Intelligent compression and caching to reduce bandwidth
+  - Regional caching strategy with primary focus on Indian edge locations
 
 **Additional Services:**
 - **Load Balancer**: Application Load Balancer
@@ -162,23 +196,29 @@ With this salary structure, the estimated monthly team cost ranges from ₹5,00,
   - GPT-4o-mini: ₹0.15 per 1M input tokens, ₹0.60 per 1M output tokens
   - Caching of common queries and limited usage
   - Estimated monthly cost: ₹8,000 - ₹12,000
+- **Proctoring API** (Eklavvya): For secure exam monitoring and assessment integrity
+  - AI-based proctoring with facial recognition and screen monitoring
+  - Integration with assessment system for exam integrity
+  - Multi-language support for Indian regional languages
+  - API-based integration with LMS assessment system
+  - Estimated monthly cost: ₹15,000 - ₹25,000 (based on exam volume)
 - **Email Service** (SendGrid):
   - 50,000 emails/month: ₹1,500/month
 - **SMS Service** (MSG91):
   - 10,000 SMS/month: ₹2,000/month
 
 **Total Infrastructure Costs:**
-- **Monthly (50K Users)**: ₹30,000 - ₹40,000
-- **Monthly (100K Users)**: ₹40,000 - ₹55,000
-- **Annual**: ₹3,60,000 - ₹6,60,000
+- **Monthly (50K Users)**: ₹100,000 - ₹125,000
+- **Monthly (100K Users)**: ₹110,000 - ₹140,000
+- **Annual**: ₹12,00,000 - ₹16,80,000
 
 **Per-User Cost Analysis:**
 - **Monthly Cost Per User:**
-  - For 50,000 users: ₹0.60 - ₹0.80 per user/month
-  - For 100,000 users: ₹0.40 - ₹0.55 per user/month
+  - For 50,000 users: ₹2.00 - ₹2.50 per user/month
+  - For 100,000 users: ₹1.10 - ₹1.40 per user/month
 - **Annual Cost Per User:**
-  - For 50,000 users: ₹7.20 - ₹9.60 per user/year
-  - For 100,000 users: ₹4.80 - ₹6.60 per user/year
+  - For 50,000 users: ₹24.00 - ₹30.00 per user/year
+  - For 100,000 users: ₹13.20 - ₹16.80 per user/year
 
 ### Resource Optimization Strategies
 
@@ -274,6 +314,33 @@ The infrastructure is designed to handle 50K users initially with the ability to
 - **Knowledge Sharing**: Weekly tech talks and documentation updates
 
 ## Advanced AI Features (Future Roadmap)
+
+### Custom AI Model Development & Training
+- **Model Development Lifecycle**:
+  - Initial data collection and preparation (1-2 months)
+  - Base model selection and adaptation (2-3 weeks)
+  - Fine-tuning and hyperparameter optimization (2-4 weeks)
+  - Model evaluation and validation against Indian educational data (1-2 weeks)
+  - Deployment and monitoring pipeline setup (1-2 weeks)
+  - Continuous improvement with performance tracking
+
+- **Training Strategy**:
+  - Scheduled batch training during off-peak hours to optimize GPU utilization
+  - Transfer learning from existing models to reduce training time and resource usage
+  - Progressive model pruning and quantization for efficient deployment
+  - Distributed training for larger models with data parallelism
+
+- **Resource Management**:
+  - GPU instance provisioning through AWS auto-scaling groups
+  - Spot instance usage for non-time-critical training
+  - Model checkpointing to ensure training resilience
+  - Training data caching and preprocessing optimization
+
+- **Model Performance Metrics**:
+  - Regular benchmarking against commercial APIs for quality comparison
+  - A/B testing framework for evaluating model improvements
+  - User feedback collection for continuous enhancement
+  - Cost-per-inference tracking and optimization
 
 ### NeuroLearn™ Adaptive Learning System
 - **Personalized Learning Pathways**: AI that identifies learning styles and adapts content accordingly
@@ -472,3 +539,12 @@ The infrastructure is designed to handle 50K users initially with the ability to
   - **Faculty Credentials Verification**: Ensuring faculty qualifications meet requirements
   - **Inter-University Credit Transfer**: Management of credit recognition between institutions
   - **Regulatory Document Repository**: Central storage for all approval-related documentation
+
+**Video Storage & Processing:**
+- **Multi-bitrate Video Storage**: Storage optimized for different device capabilities
+  - Average 1-hour lecture: ~250MB (multiple quality levels)
+  - Estimated 500 new hours of content per month: ~125GB monthly addition
+  - Content pruning and archiving strategy for outdated material
+- **Transcoding Costs**: AWS Elemental MediaConvert
+  - ₹3,000/month for video processing and format conversion
+  - Batch processing during off-peak hours to reduce costs
