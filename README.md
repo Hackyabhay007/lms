@@ -241,6 +241,16 @@ With this salary structure, the estimated monthly team cost ranges from ₹5,00,
 - **API Rate Limiting**: Prevent abuse and control costs
 - **Batch Processing**: Aggregate background tasks to minimize resource usage
 
+**Video Storage & Processing:**
+- **Multi-bitrate Video Storage**: Storage optimized for different device capabilities
+  - Average 1-hour lecture: ~250MB (multiple quality levels)
+  - Estimated 500 new hours of content per month: ~125GB monthly addition
+  - Content pruning and archiving strategy for outdated material
+- **Transcoding Costs**: AWS Elemental MediaConvert
+  - ₹3,000/month for video processing and format conversion
+  - Batch processing during off-peak hours to reduce costs
+
+
 **Scaling Economics:**
 The infrastructure is designed to handle 50K users initially with the ability to scale to 100K users with minimal additional investment. The per-user cost decreases significantly as user count increases, demonstrating good economies of scale.
 
@@ -540,11 +550,3 @@ The infrastructure is designed to handle 50K users initially with the ability to
   - **Inter-University Credit Transfer**: Management of credit recognition between institutions
   - **Regulatory Document Repository**: Central storage for all approval-related documentation
 
-**Video Storage & Processing:**
-- **Multi-bitrate Video Storage**: Storage optimized for different device capabilities
-  - Average 1-hour lecture: ~250MB (multiple quality levels)
-  - Estimated 500 new hours of content per month: ~125GB monthly addition
-  - Content pruning and archiving strategy for outdated material
-- **Transcoding Costs**: AWS Elemental MediaConvert
-  - ₹3,000/month for video processing and format conversion
-  - Batch processing during off-peak hours to reduce costs
