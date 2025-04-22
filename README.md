@@ -97,7 +97,10 @@ A comprehensive Learning Management System designed specifically for Indian univ
 
 ### Team Structure
 - **Project Lead (1)**: Oversees entire project, client communication, and resource management
-- **UI/UX Designer (1)**: Creates wireframes, user flows, and design system
+- **UI/UX Team (4)**:
+  - UI/UX Lead Designer (1): ₹50,000/month - Oversees design strategy, design system, and team coordination
+  - UI Designers (2): ₹30,000/month each - Create responsive layouts, component design, and visual assets
+  - UX Designer (1): ₹30,000/month - Conducts user research, develops user flows, and creates interactive prototypes
 - **Frontend Developers (3)**:
   - Lead Frontend Developer: Architecture and component library development
   - Frontend Developer (2): Feature implementation and testing
@@ -123,20 +126,22 @@ A comprehensive Learning Management System designed specifically for Indian univ
 ### Team Salary Structure
 
 **Team Salary Overview:**
-The total development team consists of 14 members with salary ranges between ₹20,000 to ₹1,00,000 per month based on role and experience level. The project lead and senior technical leads are positioned at the higher end of the spectrum, while junior developers and QA engineers are at the lower to mid-range.
+The total development team consists of 17 members with salary ranges between ₹20,000 to ₹1,00,000 per month based on role and experience level. The project lead and senior technical leads are positioned at the higher end of the spectrum, while junior developers and QA engineers are at the lower to mid-range.
 
 **Monthly Salary Breakdown:**
 - Project Lead (5+ years experience): ₹80,000 - ₹1,00,000
+- UI/UX Lead Designer (5+ years experience): ₹50,000
+- UI Designers (2-4 years experience): ₹30,000 each
+- UX Designer (2-4 years experience): ₹30,000
 - Technical Leads (Frontend, Backend, AI - 5+ years experience): ₹60,000 - ₹90,000
 - Mid-level Developers (Frontend, Backend, AI - 2-4 years): ₹40,000 - ₹65,000
 - Junior Developers (0-2 years): ₹20,000 - ₹35,000
 - Senior QA Engineer (4+ years): ₹50,000 - ₹75,000
 - Junior QA Engineers (0-2 years): ₹20,000 - ₹30,000
-- UI/UX Designer (3-5 years): ₹45,000 - ₹70,000
 - DevOps Engineer (3-5 years): ₹50,000 - ₹80,000
 
 **Total Project Cost:**
-With this salary structure, the estimated monthly team cost ranges from ₹5,00,000 to ₹7,50,000, bringing the total 5-month project cost to approximately ₹25,00,000 to ₹37,50,000.
+With this updated salary structure, the estimated monthly team cost ranges from ₹6,00,000 to ₹8,50,000, bringing the total 6-month project cost to approximately ₹36,00,000 to ₹51,00,000.
 
 ## Server Requirements & Infrastructure Costs
 
@@ -254,23 +259,35 @@ With this salary structure, the estimated monthly team cost ranges from ₹5,00,
 **Scaling Economics:**
 The infrastructure is designed to handle 50K users initially with the ability to scale to 100K users with minimal additional investment. The per-user cost decreases significantly as user count increases, demonstrating good economies of scale.
 
-## Development Timeline (4-5 Months)
+## Development Timeline (6 Months)
 
-#### Month 1: Planning & Foundation
+#### Month 1: UI/UX Design & Planning
 - **Week 1-2**: 
-  - Requirements analysis and refinement
+  - Requirements analysis and user research
+  - User persona development and journey mapping
+  - Information architecture design
+  - Low-fidelity wireframing for key user flows
+- **Week 3-4**:
+  - High-fidelity UI design for core components
+  - Design system and style guide development
+  - Interactive prototyping for user testing
+  - Design handoff preparation with developer specifications
+
+#### Month 2: Technical Foundation
+- **Week 1-2**: 
   - Technical architecture design
   - Database schema design
-  - UI/UX wireframing and prototyping
-- **Week 3-4**:
   - Development environment setup
   - CI/CD pipeline configuration
+- **Week 3-4**:
   - Core infrastructure deployment
-  - Design system and component library development
+  - Frontend component library development based on design system
+  - API architecture planning
+  - Basic authentication framework implementation
 
-#### Month 2: Core Functionality
+#### Month 3: Core Functionality
 - **Week 1-2**:
-  - Authentication and user management
+  - Authentication and user management implementation
   - Basic course management functionality
   - File upload and storage integration
   - Database implementation and initial migrations
@@ -280,7 +297,7 @@ The infrastructure is designed to handle 50K users initially with the ability to
   - Student dashboard basic implementation
   - Faculty dashboard basic implementation
 
-#### Month 3: Advanced Features
+#### Month 4: Advanced Features
 - **Week 1-2**:
   - Attendance tracking system
   - In-video quiz functionality
@@ -292,7 +309,7 @@ The infrastructure is designed to handle 50K users initially with the ability to
   - Live event functionality
   - Mobile responsiveness and optimization
 
-#### Month 4: Completion & Quality Assurance
+#### Month 5: Quality Assurance & Refinement
 - **Week 1-2**:
   - Administrator dashboard and reporting
   - Advanced analytics and data visualization
@@ -304,7 +321,7 @@ The infrastructure is designed to handle 50K users initially with the ability to
   - Documentation completion
   - User acceptance testing (UAT)
 
-#### Month 5 (if needed): Polishing & Deployment
+#### Month 6: Deployment & Handover
 - **Week 1-2**:
   - Final bug fixes and refinements
   - Production environment setup
