@@ -3,6 +3,84 @@
 ## Overview
 A comprehensive Learning Management System designed specifically for Indian universities, featuring video-based learning, attendance tracking, AI assistance, assessment tools, and analytics for student success prediction. Compliant with UGC (University Grants Commission), AICTE (All India Council for Technical Education), and aligned with NEP 2020 (National Education Policy) guidelines.
 
+## Technology Stack
+
+### Frontend
+- **Framework**: React.js with Next.js for server-side rendering
+- **State Management**: Redux for global state, React Context for local state
+- **UI Components**: Material-UI with custom theming for institutional branding
+- **Video Player**: Video.js with HLS support for adaptive streaming quality
+- **Real-time Communication**: Socket.io for live features and notifications
+- **Authentication**: JWT with refresh tokens
+- **Form Handling**: Formik with Yup for validation
+- **Data Visualization**: D3.js and Chart.js for analytics dashboards
+- **Resource Optimization**:
+  - Code splitting and lazy loading for faster initial load times
+  - Asset compression and minification
+  - Incremental static regeneration for static content
+  - Service worker for caching static assets
+
+### Backend
+- **API Layer**: Node.js with Express.js for RESTful APIs
+- **Database**: 
+  - MongoDB Atlas (cloud) with proper indexing for efficient queries
+  - Connection pooling to minimize database connections
+  - Read replicas for scaling read operations
+- **Caching**: 
+  - Redis for session storage and frequent data caching
+  - Application-level caching for API responses
+  - CDN caching for static assets
+- **Authentication & Authorization**: Passport.js with custom JWT strategy
+- **File Storage**: AWS S3 with lifecycle policies for cost optimization
+- **Video Processing**: 
+  - Efficient encoding with FFmpeg using AWS Lambda for serverless processing
+  - Multi-bitrate videos for bandwidth optimization
+- **Search**: MongoDB Atlas Search with efficient indexing strategies
+- **Background Jobs**: Bull with Redis for notifications and scheduled tasks
+- **Scaling Strategy**: 
+  - Horizontal scaling with auto-scaling groups
+  - Load balancing with AWS Application Load Balancer
+  - Database sharding for future growth beyond 100K users
+
+### Third-Party API Integrations
+- **AI Services**:
+  - OpenAI API with usage limits and caching of common queries
+  - AWS Rekognition with optimized image sizes for attendance verification
+  - Google Cloud Natural Language with batched requests for content analysis
+- **Video Conferencing**: Zoom API for live sessions and webinars with regional routing
+- **Authentication**: Aadhaar Authentication API and DigiLocker API
+- **Educational Content**: SWAYAM and NPTEL APIs for content integration
+- **Payments**: RazorPay API and UPI for fee transactions
+- **Notifications**: SendGrid for emails, MSG91 for SMS with batched sending
+
+### DevOps & Deployment
+- **Containerization**: Docker with multi-stage builds for smaller images
+- **Orchestration**: Amazon ECS for simpler management than Kubernetes
+- **CI/CD**: GitHub Actions with caching for faster builds
+- **Monitoring**: 
+  - CloudWatch for basic metrics and alarms
+  - Custom dashboard for key performance indicators
+- **Logging**: 
+  - Centralized logging with log rotation and retention policies
+  - Sample-based debug logging in production
+- **Cloud Provider**: AWS with regional deployment (Mumbai region)
+- **Content Delivery**: CloudFront CDN with browser caching
+
+### Testing
+- **Performance Testing**: Artillery for simulating realistic user loads
+- **Code Quality**: ESLint and Prettier
+
+### Security & Compliance
+- **Data Protection**: Compliance with Personal Data Protection Bill
+- **Standards Compliance**: 
+  - UGC and AICTE regulatory requirements
+  - NEP 2020 guidelines for digital education
+- **Security Measures**:
+  - Data encryption at rest and in transit
+  - Regular security audits
+  - Role-based access control
+  - Comprehensive audit logs for all critical operations
+
 ## Advanced AI Features (Future Roadmap)
 
 ### NeuroLearn™ Adaptive Learning System
