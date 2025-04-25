@@ -108,6 +108,12 @@
   - Privacy settings to ensure data security.
   - Logout option for secure exit from the LMS.
 
+### 16. **Semester-Wise Progression**
+- **Purpose**: Ensures structured learning and progression.
+- **Features**:
+  - Restrict access to the next semester until all MCQs and assignments are completed.
+  - Self-paced lectures with mandatory checkpoints.
+
 ## Phase One:  Screens for Professor Side
 
 ### 1. **Login Screen**
@@ -448,7 +454,7 @@ To develop the LMS within the 3-month timeline with a balanced team size, the fo
    - ₹50,000 per month × 1 month = ₹50,000
 
 ### Total Estimated Development Cost
-- **Team Costs**: ₹11,00,000-13,00,000
+- **Team Costs**: ₹12,00,000-14,00,000
 
 ### Notes
 - Infrastructure costs (e.g., cloud hosting, tools) are excluded from this budget and assumed to be managed separately.
