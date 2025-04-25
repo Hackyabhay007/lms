@@ -358,39 +358,73 @@ To ensure scalability, performance, and ease of development, the following techn
 
 ## Server Cost Estimation
 
-To support 10,000 to 20,000 students, the following server cost estimation is provided based on scalable cloud infrastructure in India:
+To support 10,000 to 20,000 students cost-effectively, the following optimized infrastructure is recommended:
 
 ### Cloud Provider: AWS (Amazon Web Services)
 
 1. **Compute (EC2 Instances)**:
-   - **Type**: t3.medium (2 vCPUs, 4GB RAM) for application servers.
-   - **Cost**: ₹3,000 - ₹6,000 per month (depending on usage and scaling).
+   - **Type**: t3.medium (2 vCPUs, 4GB RAM) for application servers
+   - **Count**: 2 instances with auto-scaling (max 4 during peaks)
+   - **Cost**: ₹4,000 - ₹6,000 per month
+   - **Optimization**: Using Spot Instances for 50% of capacity
 
 2. **Database (RDS)**:
-   - **Type**: db.t3.medium (2 vCPUs, 4GB RAM) for PostgreSQL.
-   - **Cost**: ₹4,000 - ₹8,000 per month.
+   - **Type**: db.t3.medium (2 vCPUs, 4GB RAM) for PostgreSQL
+   - **Cost**: ₹6,000 - ₹8,000 per month
+   - **Optimization**: Single AZ with automated backups
 
 3. **Storage (S3)**:
-   - **Purpose**: For storing course materials, exam data, and user uploads.
-   - **Cost**: ₹1,000 - ₹2,000 per month (based on 500GB to 1TB usage).
+   - **Purpose**: Course materials with intelligent tiering
+   - **Storage**: 1TB initial with auto-scaling
+   - **Cost**: ₹2,000 - ₹3,000 per month
+   - **Optimization**: Lifecycle policies to archive old content
 
 4. **Content Delivery (CloudFront)**:
-   - **Purpose**: For faster content delivery to students across regions.
-   - **Cost**: ₹1,000 - ₹2,000 per month.
+   - **Purpose**: Regional edge caching
+   - **Cost**: ₹2,000 - ₹3,000 per month
+   - **Optimization**: Compression and cache optimization
 
-5. **Proctoring Integration (Eklavvya)**:
-   - **Cost**: Based on exam credits (e.g., ₹10 per exam credit for 10,000 exams = ₹1,00,000).
+5. **Redis Cache**:
+   - **Type**: cache.t3.micro for session management
+   - **Cost**: ₹2,000 - ₹3,000 per month
+   - **Optimization**: Single node with enhanced monitoring
 
-6. **Miscellaneous (Monitoring, Backup, etc.)**:
-   - **Cost**: ₹1,000 - ₹2,000 per month.
+### Third-Party Services
+1. **Proctoring Integration**:
+   - **Basic Plan**: ₹8 per exam credit
+   - **Estimated Monthly Cost**: ₹40,000 (5,000 exam credits)
+   - **Optimization**: Bulk pricing negotiation
 
-### Total Estimated Monthly Cost
-- **Minimum**: ₹10,000 per month.
-- **Maximum**: ₹20,000 per month.
+2. **Email Service**:
+   - **AWS SES**: Pay as you go
+   - **Cost**: ₹2,000 per month
+   - **Optimization**: Email template caching
+
+### Total Monthly Infrastructure Cost
+- **Minimum**: ₹58,000
+- **Maximum**: ₹85,000
+
+### Cost Optimization Strategies
+1. **Resource Management**:
+   - Auto-scaling based on actual usage patterns
+   - Use of Spot Instances for non-critical workloads
+   - Implement aggressive caching strategies
+
+2. **Storage Optimization**:
+   - Content compression before storage
+   - Automatic archival of old content
+   - CDN caching for frequently accessed content
+
+3. **Database Optimization**:
+   - Query optimization and indexing
+   - Connection pooling
+   - Regular vacuum and maintenance
 
 ### Notes
-- Costs are approximate and may vary based on actual usage and scaling requirements.
-- Proctoring costs are separate and depend on the number of exams conducted.
+- All costs are exclusive of GST
+- 25-30% additional savings possible with reserved instances
+- Costs based on pay-as-you-go model
+- Infrastructure can handle 20% traffic spikes
 
 ## Development Plan
 

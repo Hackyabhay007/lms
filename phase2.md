@@ -148,6 +148,79 @@ To develop the enhanced LMS features in Phase Two, the following cost estimation
 ### Total Estimated Development Cost
 - **Team Costs**: ₹13,00,000-15,00,000
 
+### Server and Third-Party Costs (Monthly)
+
+#### AWS Infrastructure (Optimized for 10k-20k Users)
+1. **Enhanced Compute (EC2 Instances)**:
+   - **Type**: t3.medium (2 vCPUs, 4GB RAM)
+   - **Count**: 3 instances with auto-scaling (max 5)
+   - **Cost**: ₹6,000 - ₹8,000 per month
+   - **Optimization**: 70% Spot Instance usage
+
+2. **Database (RDS)**:
+   - **Type**: db.t3.medium (2 vCPUs, 4GB RAM)
+   - **Cost**: ₹8,000 - ₹10,000 per month
+   - **Optimization**: Read replicas during peak hours only
+
+3. **Storage (S3)**:
+   - **Purpose**: Course materials and assignments
+   - **Storage**: 2TB with intelligent tiering
+   - **Cost**: ₹3,000 - ₹4,000 per month
+   - **Optimization**: Automatic archival after 90 days
+
+4. **Content Delivery (CloudFront)**:
+   - **Purpose**: Video and content delivery
+   - **Cost**: ₹3,000 - ₹4,000 per month
+   - **Optimization**: Regional edge caching only
+
+5. **Redis Cache**:
+   - **Type**: cache.t3.micro (2 nodes)
+   - **Cost**: ₹3,000 - ₹4,000 per month
+   - **Optimization**: Scheduled scaling
+
+#### Third-Party Services (Optimized)
+1. **Proctoring Integration**:
+   - **Basic Plan**: ₹8 per exam credit
+   - **Estimated Monthly Cost**: ₹40,000 (5,000 exam credits)
+   - **Optimization**: Bulk pricing negotiation
+
+2. **Gemini API Integration**:
+   - **Usage**: 30 queries per user per month
+   - **Token Limit**: 256 tokens per query
+   - **Cost**: ₹15,000 per month
+   - **Optimization**: Response caching + rate limiting
+
+3. **Communication Services**:
+   - **Firebase Cloud Messaging**: Free tier (500k messages/month)
+   - **Email**: AWS SES (Pay as you go)
+   - **Cost**: ₹2,000 per month
+   - **Optimization**: Template-based messaging
+
+#### Total Monthly Infrastructure and Services Cost
+- **Minimum**: ₹81,000
+- **Maximum**: ₹1,03,000
+
+### Cost Optimization Strategies
+1. **Resource Management**:
+   - Implement predictive auto-scaling
+   - Use Spot Instances for background tasks
+   - Scheduled scaling based on usage patterns
+
+2. **Data Management**:
+   - Implement tiered storage strategy
+   - Aggressive caching for static content
+   - Regular cleanup of unused resources
+
+3. **Service Optimization**:
+   - Firebase Analytics for basic usage tracking (Free tier)
+   - Batch processing for background tasks
+   - API request batching
+   - Implement retry mechanisms with exponential backoff
+
 ### Notes
-- Infrastructure costs (e.g., cloud hosting, tools) are excluded from this budget and assumed to be managed separately.
-- Budget has been reallocated to prioritize backend and AI/ML roles while maintaining the same total cost range.
+- Costs optimized for 10,000-20,000 users
+- Infrastructure can handle 30% traffic spikes
+- All costs are exclusive of GST
+- 20-25% additional savings possible with annual commitments
+- Using Firebase free tier for notifications and analytics
+- Basic security through AWS security groups and network ACLs
