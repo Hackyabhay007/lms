@@ -35,6 +35,10 @@
   - View and reply to comments from peers and professors.
   - Filter comments by topics or keywords for focused discussions.
 
+### 17. **AI-Driven Content Recommendations**
+- Suggest courses or resources based on student behavior and learning patterns.
+- Provide personalized recommendations to enhance the learning experience.
+
 ---
 
 ## Advanced Features for Professors
