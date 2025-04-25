@@ -125,10 +125,18 @@
 ---
 
 ## Timeline
-- **Duration**: 2 Months
+- **Duration**: 2-3 Months
 - **Focus**: Advanced AI, scalability, and system optimization.
 
 ---
 
 ## Budget
-- **Estimated Cost**: ₹18,00,000 to ₹20,00,000 (depending on additional infrastructure and AI requirements).
+- **Estimated Cost**: ₹14,00,000 to ₹15,00,000 (adjusted to fit within the specified range by optimizing team size and infrastructure costs).
+
+### Cost Optimization Details
+1. **Team Adjustments**:
+   - Reduce the number of part-time AI/ML engineers to 1.
+   - Optimize QA testing by using automated tools to reduce manual effort.
+2. **Infrastructure Optimization**:
+   - Use cost-effective cloud solutions for AI processing and storage.
+   - Leverage existing tools and integrations to minimize additional licensing costs.
