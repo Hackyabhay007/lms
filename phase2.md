@@ -28,6 +28,13 @@
 - Push notifications for deadlines, live sessions, and announcements.
 - Offline mode for accessing downloaded course materials.
 
+### 16. **Timestamp-Based Discussion Feature**
+- **Purpose**: Enables students to discuss specific parts of a video or lecture.
+- **Features**:
+  - Add comments tied to specific timestamps in videos or lectures.
+  - View and reply to comments from peers and professors.
+  - Filter comments by topics or keywords for focused discussions.
+
 ---
 
 ## Advanced Features for Professors
@@ -91,100 +98,52 @@
 
 ---
 
-## New Dashboards
+## Screen-Wise Plan for Phase Two
 
-### 1. **Student Dashboard**
-- Personalized learning paths with progress tracking.
-- Gamification elements like leaderboards and badges.
-- Quick access to group projects and discussion forums.
-- Notifications for upcoming deadlines and live sessions.
+### **Dashboards**
+1. **Student Dashboard**
+   - Personalized learning paths with progress tracking.
+   - Gamification elements like leaderboards and badges.
+   - Notifications for deadlines and live sessions.
 
-### 2. **Professor Dashboard**
-- Advanced analytics for student performance and course effectiveness.
-- Tools for managing interactive course content and collaborative projects.
-- Real-time alerts for proctoring and exam monitoring.
-- Calendar view for scheduling lectures and office hours.
+2. **Professor Dashboard**
+   - Advanced analytics for student performance.
+   - Tools for managing course content and projects.
+   - Real-time alerts for proctoring and exams.
 
-### 3. **University Administrator Dashboard**
-- Custom branding options for the LMS.
-- Advanced reporting tools for performance and activity tracking.
-- Enhanced event management features.
-- Overview of system-wide usage and engagement metrics.
+3. **University Administrator Dashboard**
+   - Custom branding options.
+   - Advanced reporting tools.
+   - Event management features.
 
-### 4. **System Administrator Dashboard**
-- Real-time system health monitoring with alerts.
-- Tools for managing scalability and security.
-- Dashboards for tracking server performance and uptime.
-- Logs for auditing user activities and system changes.
-
----
-## Timeline for Phase Two
-- **Development Start**: 2025
-- **Development Duration**: 3 months
+4. **System Administrator Dashboard**
+   - Real-time system health monitoring.
+   - Scalability and security management tools.
+   - Logs for auditing activities.
 
 ---
 
 ## Development Cost Estimation
 
-To develop the enhanced LMS features in Phase Two, the following cost estimation is provided:
+To develop the LMS within the 3-month timeline with a balanced team size, the following cost estimation is adjusted to fit within a budget of ₹12,00,000 to ₹15,00,000:
 
 ### Team Costs
 1. **Frontend Developers** (2 Full-Time):
-   - ₹80,000 per month × 3 months × 2 = ₹4,80,000
+   - ₹70,000 per month × 3 months × 2 = ₹4,20,000
 2. **Backend Developers** (2 Full-Time):
-   - ₹90,000 per month × 3 months × 2 = ₹5,40,000
-3. **AI/ML Engineers** (2 Part-Time):
-   - ₹50,000 per month × 3 months × 2 = ₹3,00,000
-4. **UI/UX Designers** (1 Part-Time):
-   - ₹60,000 per month × 3 months = ₹1,80,000
+   - ₹80,000 per month × 3 months × 2 = ₹4,80,000
+3. **AI/ML Engineer** (1 Part-Time):
+   - ₹40,000 per month × 2 months = ₹80,000
+4. **UI/UX Designer** (1 Part-Time):
+   - ₹50,000 per month × 1 month = ₹50,000
 5. **QA Engineers** (2 Part-Time):
-   - ₹40,000 per month × 3 months × 2 = ₹2,40,000
+   - ₹30,000 per month × 2 months × 2 = ₹1,20,000
 6. **DevOps Engineer** (1 Part-Time):
-   - ₹70,000 per month × 3 months = ₹2,10,000
+   - ₹50,000 per month × 1 month = ₹50,000
 
 ### Total Estimated Development Cost
-- **Team Costs**: ₹19,50,000
-- **Grand Total**: ₹19,50,000
+- **Team Costs**: ₹12,00,000-15,00,000
 
 ### Notes
-- Costs are approximate and may vary based on actual team rates and infrastructure usage.
-- The estimation assumes a lean team with part-time roles for specific tasks.
-
-## Notes
-- Phase Two builds upon the existing infrastructure and features developed in Phase One.
-- The focus is on enhancing user engagement, personalization, and scalability.
-## Timeline for Phase Two
-- **Development Start**: August 2025
-- **Development End**: October 2025
-
----
-
-## Development Cost Estimation
-
-To develop the enhanced LMS features in Phase Two, the following cost estimation is provided:
-
-### Team Costs
-1. **Frontend Developers** (2 Full-Time):
-   - ₹80,000 per month × 3 months × 2 = ₹4,80,000
-2. **Backend Developers** (2 Full-Time):
-   - ₹90,000 per month × 3 months × 2 = ₹5,40,000
-3. **AI/ML Engineers** (2 Part-Time):
-   - ₹50,000 per month × 2 months × 2 = ₹2,00,000
-4. **UI/UX Designers** (1 Part-Time):
-   - ₹60,000 per month × 1 month = ₹60,000
-5. **QA Engineers** (2 Part-Time):
-   - ₹40,000 per month × 2 months × 2 = ₹1,60,000
-6. **DevOps Engineer** (1 Part-Time):
-   - ₹70,000 per month × 1 month = ₹70,000
-
-### Total Estimated Development Cost
-- **Team Costs**: ₹14,10,000
-- **Grand Total**: ₹14,85,000
-
-### Notes
-- Costs are approximate and may vary based on actual team rates and infrastructure usage.
-- The estimation assumes a lean team with part-time roles for specific tasks.
-
-## Notes
-- Phase Two builds upon the existing infrastructure and features developed in Phase One.
-- The focus is on enhancing user engagement, personalization, and scalability.
+- Infrastructure costs (e.g., cloud hosting, tools) are excluded from this budget and assumed to be managed separately.
+- Costs have been adjusted to include 2 testers, 1 DevOps engineer, and 1 UI/UX designer while maintaining the budget constraints.
