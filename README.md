@@ -298,3 +298,58 @@
   - Configure system-wide settings like themes and policies.
   - Logout option for secure exit from the LMS.
 
+## Tech Stack
+
+To ensure scalability, performance, and ease of development, the following technologies are recommended for the LMS:
+
+### Frontend
+- **React.js**: For building a responsive and interactive user interface.
+- **Redux**: For state management across the application.
+- **Tailwind CSS**: For efficient and customizable styling.
+
+### Backend
+- **Node.js**: For building a scalable and high-performance server.
+- **Express.js**: For creating RESTful APIs.
+- **GraphQL**: For flexible and efficient data querying.
+
+### Database
+- **PostgreSQL**: For relational data storage with scalability and reliability.
+- **Redis**: For caching and session management to improve performance.
+
+### AI/ML Integration
+- **Python**: For implementing AI/ML models for features like doubt resolution and automated grading.
+- **TensorFlow/PyTorch**: For building and deploying machine learning models.
+
+### Proctoring and Monitoring
+- **OpenCV**: For implementing proctoring features like face detection and screen monitoring.
+- **WebRTC**: For real-time video and audio streaming during exams.
+
+### Proctoring Integration
+- **Purpose**: Ensure secure and authentic online examinations using Eklavvya's proctoring solutions.
+- **Features**:
+  - **AI Image Proctoring**: Capture photographs of candidates at regular intervals for authenticity.
+  - **AI Video Proctoring**: Continuous video streaming for remote exam proctoring and auto invigilation.
+  - **Audio Proctoring**: Monitor audio during exams to detect suspicious activities.
+  - **360-Degree Proctoring**: Use mobile and laptop cameras for comprehensive monitoring.
+  - **Onscreen Evaluation**: Facilitate grading and assessment of exams directly on the platform.
+  - **Custom Branding**: Define your own branding, logo, and theme for the proctoring process.
+
+### Cloud and Hosting
+- **AWS (Amazon Web Services)**: For hosting, storage, and scalability.
+  - **S3**: For storing course materials and resources.
+  - **EC2**: For hosting the backend server.
+  - **RDS**: For managing the PostgreSQL database.
+- **Docker**: For containerization and easy deployment.
+
+### DevOps and CI/CD
+- **GitHub Actions**: For continuous integration and deployment.
+- **Kubernetes**: For container orchestration and scaling.
+
+### Security
+- **JWT (JSON Web Tokens)**: For secure authentication and authorization.
+- **OWASP Best Practices**: For ensuring application security.
+
+### Analytics and Reporting
+- **Google Analytics**: For tracking user activity and engagement.
+- **Metabase**: For creating and sharing data analytics dashboards.
+
