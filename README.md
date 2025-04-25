@@ -389,11 +389,6 @@ To support 10,000 to 20,000 students, the following server cost estimation is pr
 
 ### Phase 1: Core Features Development (1 Month)
 #### Timeline: May 2025
-#### Team Required:
-- **Frontend Developer**: 1 (React.js, Next.js, Tailwind CSS expertise)
-- **Backend Developer**: 1 (Node.js, Express.js, GraphQL expertise)
-- **UI/UX Designer**: 1 (Part-time, for designing intuitive interfaces)
-- **QA Engineer**: 1 (Part-time, for testing and ensuring quality)
 
 #### Tasks:
 1. **Student Side Features**:
@@ -407,26 +402,18 @@ To support 10,000 to 20,000 students, the following server cost estimation is pr
 
 ### Phase 2: Advanced Features and AI Integration (1 Month)
 #### Timeline: June 2025
-#### Team Required:
-- **AI/ML Engineer**: 1 (Part-time, for AI features like automated grading)
-- **Backend Developer**: 1 (For integrating AI models and optimizing APIs)
-- **Frontend Developer**: 1 (For implementing AI-driven UI features)
 
 #### Tasks:
 1. **AI-Powered Features**:
    - Automated grading for assignments and exams.
    - AI-powered doubt resolution and chat interface.
 2. **Proctoring Enhancements**:
-   - Implement advanced proctoring features like 360-degree monitoring.
+   - Implement advanced proctoring features.
 3. **Performance Optimization**:
    - Optimize database queries and API performance.
 
 ### Phase 3: Deployment and Scaling (1 Month)
 #### Timeline: July 2025
-#### Team Required:
-- **DevOps Engineer**: 1 (Part-time, for deployment and scaling)
-- **Backend Developer**: 1 (For server optimization)
-- **QA Engineer**: 1 (Part-time, for final testing and bug fixes)
 
 #### Tasks:
 1. **Deployment**:
