@@ -2,7 +2,7 @@
 
 
 
-## Phase One: Basic Screens for Student Side
+## Phase One:  Screens for Student Side
 
 ### 1. **Login Screen**
 - **Purpose**: Provides secure access to the LMS for students.
@@ -107,7 +107,7 @@
   - Privacy settings to ensure data security.
   - Logout option for secure exit from the LMS.
 
-## Phase One: Basic Screens for Professor Side
+## Phase One:  Screens for Professor Side
 
 ### 1. **Login Screen**
 - **Purpose**: Provides secure access to the LMS for professors.
@@ -262,7 +262,7 @@
   - Privacy settings to ensure data security.
   - Logout option for secure exit from the LMS.
 
-## Phase One: Basic Screens for Admin Panel
+## Phase One:  Screens for Admin Panel
 
 ### 1. **Login Screen**
 - **Purpose**: Provides secure access to the LMS for administrators.
