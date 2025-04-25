@@ -106,7 +106,6 @@
    - Conduct real-time polls during lectures.
    - Gather student feedback instantly.
 
-
 ### Additional Features for Phase Three
 
 #### **General Features**
@@ -121,6 +120,15 @@
 3. **Enhanced Accessibility Features**
    - Support for screen readers, high-contrast modes, and keyboard navigation.
    - Multi-language support for a global audience.
+
+### Global Search Feature
+- **Purpose**: Enable users to search for content, courses, or features across the LMS.
+- **Features**:
+  - Search bar available on all dashboards (students, professors, administrators).
+  - Filters for narrowing down search results (e.g., by course, topic, or user).
+  - Real-time search suggestions as users type.
+  - Highlighted keywords in search results for better visibility.
+  - Integration with AI to provide context-aware search results.
 
 ---
 
