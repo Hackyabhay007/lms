@@ -154,11 +154,95 @@
 6. **DevOps Engineer** (1 Part-Time):
    - ₹40,000 per month × 1 month = ₹40,000
 
+### Server and Third-Party Costs (Monthly)
 
-## Budget
-- **Estimated Cost**: ₹14,00,000 to ₹15,00,000 (adjusted to fit within the specified range by optimizing team size and infrastructure costs).
+#### AWS Infrastructure (Cost-Optimized for 10k-20k Users)
+1. **Compute (EC2 Instances)**:
+   - **Type**: t3.medium (2 vCPUs, 4GB RAM)
+   - **Count**: 3 base instances + 1 for AI workloads
+   - **Auto-scaling**: Max 6 instances during peaks
+   - **Cost**: ₹8,000 - ₹12,000 per month
+   - **Optimization**: 80% Spot Instance usage
+
+2. **Database (RDS)**:
+   - **Type**: db.t3.medium with read replica
+   - **Cost**: ₹10,000 - ₹12,000 per month
+   - **Optimization**: Scheduled read replica usage
+
+3. **Storage (S3)**:
+   - **Storage**: 3TB with intelligent tiering
+   - **Cost**: ₹4,000 - ₹5,000 per month
+   - **Optimization**: 90-day lifecycle policy
+
+4. **Content Delivery (CloudFront)**:
+   - **Regional Edge Locations**: India focus
+   - **Cost**: ₹4,000 - ₹6,000 per month
+   - **Optimization**: Dynamic compression
+
+5. **Redis Cache**:
+   - **Type**: cache.t3.micro cluster
+   - **Cost**: ₹4,000 - ₹5,000 per month
+   - **Optimization**: Time-based eviction
+
+6. **Load Balancer**:
+   - **Type**: Application Load Balancer
+   - **Cost**: ₹2,000 - ₹3,000 per month
+
+#### AI and Third-Party Services (Optimized)
+1. **Proctoring Integration**:
+   - **Basic Plan**: ₹8 per exam credit
+   - **Estimated Monthly Cost**: ₹40,000 (5,000 exam credits)
+   - **Optimization**: Bulk pricing negotiation
+
+2. **Gemini API**:
+   - **Standard Tier**: ₹80,000 per month
+     - 30 queries per user per month
+     - 256 token limit per query
+     - 60% response caching
+   - **Advanced Tier (Limited)**: ₹20,000 per month
+     - 3 queries per user per month
+     - Complex educational tasks only
+
+3. **ML Infrastructure**:
+   - **Purpose**: Essential predictions and recommendations
+   - **Cost**: ₹15,000 per month
+   - **Optimization**: Batch predictions
+
+4. **Communication Services**:
+   - **Firebase Cloud Messaging**: Free tier (500k messages/month)
+   - **Email (AWS SES)**: ₹3,000 per month
+   - **Push Notifications**: Included in Firebase free tier
+
+#### Total Monthly Infrastructure Cost
+- **Minimum**: ₹1,09,000
+- **Maximum**: ₹1,45,000
+
+### Cost Optimization Strategies
+1. **AI Cost Control**:
+   - Implement strict rate limiting
+   - Cache common AI responses (estimated 60% savings)
+   - Use lighter models for basic tasks
+
+2. **Infrastructure Optimization**:
+   - Automatic instance right-sizing
+   - Scheduled scaling for predictable loads
+   - Basic security through AWS VPC and security groups
+
+3. **Storage Efficiency**:
+   - Implement content deduplication
+   - Automatic content archival
+   - Video compression optimization
+
+4. **Analytics and Monitoring**:
+   - Firebase Analytics (Free tier)
+   - AWS CloudWatch basic metrics
+   - Custom logging with log rotation
 
 ### Notes
-- Infrastructure costs (e.g., cloud hosting, tools) are excluded from this budget.
-- Budget has been reallocated to prioritize backend and AI/ML roles while maintaining the same total cost range.
-- Increased focus on AI/ML and backend development to support advanced features in Phase Three.
+- Infrastructure optimized for 10,000-20,000 users
+- Focused on essential advanced features
+- 45% cost reduction from initial estimates
+- All costs are exclusive of GST
+- Further 20% savings possible with reserved instances
+- Using Firebase free tier for notifications and analytics
+- Basic security through AWS native services
