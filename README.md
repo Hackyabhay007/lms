@@ -24,6 +24,7 @@
   - High-quality educational videos organized by modules and topics.
   - Locked videos to ensure sequential learning and prevent skipping.
   - Integration with SWAYAM for additional learning resources.
+  - **Quizzes Between Modules**: Short quizzes added between video modules to reinforce learning and assess understanding.
 
 ### 4. **Doubt Resolution Screen**
 - **Purpose**: Enables students to resolve doubts quickly and efficiently.
