@@ -349,6 +349,42 @@ To ensure scalability, performance, and ease of development, the following techn
 - **Google Analytics**: For tracking user activity and engagement.
 - **Metabase**: For creating and sharing data analytics dashboards.
 
+## Server Cost Estimation
+
+To support 10,000 to 20,000 students, the following server cost estimation is provided based on scalable cloud infrastructure in India:
+
+### Cloud Provider: AWS (Amazon Web Services)
+
+1. **Compute (EC2 Instances)**:
+   - **Type**: t3.medium (2 vCPUs, 4GB RAM) for application servers.
+   - **Cost**: ₹3,000 - ₹6,000 per month (depending on usage and scaling).
+
+2. **Database (RDS)**:
+   - **Type**: db.t3.medium (2 vCPUs, 4GB RAM) for PostgreSQL.
+   - **Cost**: ₹4,000 - ₹8,000 per month.
+
+3. **Storage (S3)**:
+   - **Purpose**: For storing course materials, exam data, and user uploads.
+   - **Cost**: ₹1,000 - ₹2,000 per month (based on 500GB to 1TB usage).
+
+4. **Content Delivery (CloudFront)**:
+   - **Purpose**: For faster content delivery to students across regions.
+   - **Cost**: ₹1,000 - ₹2,000 per month.
+
+5. **Proctoring Integration (Eklavvya)**:
+   - **Cost**: Based on exam credits (e.g., ₹10 per exam credit for 10,000 exams = ₹1,00,000).
+
+6. **Miscellaneous (Monitoring, Backup, etc.)**:
+   - **Cost**: ₹1,000 - ₹2,000 per month.
+
+### Total Estimated Monthly Cost
+- **Minimum**: ₹10,000 per month.
+- **Maximum**: ₹20,000 per month.
+
+### Notes
+- Costs are approximate and may vary based on actual usage and scaling requirements.
+- Proctoring costs are separate and depend on the number of exams conducted.
+
 ## Development Plan
 
 ### Phase 1: Core Features Development (1 Month)
