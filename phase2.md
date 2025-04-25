@@ -129,25 +129,25 @@
 
 ## Development Cost Estimation
 
-To develop the LMS within the 3-month timeline with a balanced team size, the following cost estimation is adjusted to fit within a budget of ₹12,00,000 to ₹15,00,000:
+To develop the enhanced LMS features in Phase Two, the following cost estimation is provided:
 
 ### Team Costs
 1. **Frontend Developers** (2 Full-Time):
-   - ₹70,000 per month × 3 months × 2 = ₹4,20,000
+   - ₹40,000 per month × 3 months × 2 = ₹2,40,000
 2. **Backend Developers** (2 Full-Time):
-   - ₹80,000 per month × 3 months × 2 = ₹4,80,000
-3. **AI/ML Engineer** (1 Part-Time):
-   - ₹40,000 per month × 2 months = ₹80,000
+   - ₹1,20,000 per month × 3 months × 2 = ₹7,20,000
+3. **AI/ML Engineers** (2 Part-Time):
+   - ₹80,000 per month × 2 months × 2 = ₹3,20,000
 4. **UI/UX Designer** (1 Part-Time):
-   - ₹50,000 per month × 1 month = ₹50,000
+   - ₹20,000 per month × 1 month = ₹20,000
 5. **QA Engineers** (2 Part-Time):
-   - ₹30,000 per month × 2 months × 2 = ₹1,20,000
+   - ₹20,000 per month × 2 months × 2 = ₹80,000
 6. **DevOps Engineer** (1 Part-Time):
-   - ₹50,000 per month × 1 month = ₹50,000
-
+   - ₹40,000 per month × 1 month = ₹40,000
+   
 ### Total Estimated Development Cost
 - **Team Costs**: ₹13,00,000-15,00,000
 
 ### Notes
 - Infrastructure costs (e.g., cloud hosting, tools) are excluded from this budget and assumed to be managed separately.
-- Costs have been adjusted to include 2 testers, 1 DevOps engineer, and 1 UI/UX designer while maintaining the budget constraints.
+- Budget has been reallocated to prioritize backend and AI/ML roles while maintaining the same total cost range.

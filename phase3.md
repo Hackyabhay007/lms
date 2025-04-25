@@ -138,13 +138,27 @@
 
 ---
 
+## Budget and Team Structure
+
+### Team Costs
+1. **Frontend Developers** (2 Full-Time):
+   - ₹40,000 per month × 3 months × 2 = ₹2,40,000
+2. **Backend Developers** (2 Full-Time):
+   - ₹1,25,000 per month × 3 months × 2 = ₹7,50,000
+3. **AI/ML Engineers** (2 Part-Time):
+   - ₹85,000 per month × 2 months × 2 = ₹3,40,000
+4. **UI/UX Designer** (1 Part-Time):
+   - ₹20,000 per month × 1 month = ₹20,000
+5. **QA Engineers** (2 Part-Time):
+   - ₹20,000 per month × 2 months × 2 = ₹80,000
+6. **DevOps Engineer** (1 Part-Time):
+   - ₹40,000 per month × 1 month = ₹40,000
+
+
 ## Budget
 - **Estimated Cost**: ₹14,00,000 to ₹15,00,000 (adjusted to fit within the specified range by optimizing team size and infrastructure costs).
 
-### Cost Optimization Details
-1. **Team Adjustments**:
-   - Reduce the number of part-time AI/ML engineers to 1.
-   - Optimize QA testing by using automated tools to reduce manual effort.
-2. **Infrastructure Optimization**:
-   - Use cost-effective cloud solutions for AI processing and storage.
-   - Leverage existing tools and integrations to minimize additional licensing costs.
+### Notes
+- Infrastructure costs (e.g., cloud hosting, tools) are excluded from this budget.
+- Budget has been reallocated to prioritize backend and AI/ML roles while maintaining the same total cost range.
+- Increased focus on AI/ML and backend development to support advanced features in Phase Three.
