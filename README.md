@@ -304,6 +304,7 @@ To ensure scalability, performance, and ease of development, the following techn
 
 ### Frontend
 - **React.js**: For building a responsive and interactive user interface.
+- **Next.js**: For server-side rendering and improved performance.
 - **Redux**: For state management across the application.
 - **Tailwind CSS**: For efficient and customizable styling.
 
@@ -326,13 +327,7 @@ To ensure scalability, performance, and ease of development, the following techn
 
 ### Proctoring Integration
 - **Purpose**: Ensure secure and authentic online examinations using Eklavvya's proctoring solutions.
-- **Features**:
-  - **AI Image Proctoring**: Capture photographs of candidates at regular intervals for authenticity.
-  - **AI Video Proctoring**: Continuous video streaming for remote exam proctoring and auto invigilation.
-  - **Audio Proctoring**: Monitor audio during exams to detect suspicious activities.
-  - **360-Degree Proctoring**: Use mobile and laptop cameras for comprehensive monitoring.
-  - **Onscreen Evaluation**: Facilitate grading and assessment of exams directly on the platform.
-  - **Custom Branding**: Define your own branding, logo, and theme for the proctoring process.
+
 
 ### Cloud and Hosting
 - **AWS (Amazon Web Services)**: For hosting, storage, and scalability.
