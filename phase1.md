@@ -488,7 +488,7 @@ To develop the LMS within the 3-month timeline with a balanced team size, the fo
    - ₹40,000 per month × 1 month = ₹40,000
 
 ### Total Estimated Development Cost
-- **Team Costs**: ₹11,00,000-14,00,000
+- **Team Costs**: ₹12,00,000-14,00,000
 
 ### Notes
 - Infrastructure costs (e.g., cloud hosting, tools) are excluded from this budget and assumed to be managed separately.
