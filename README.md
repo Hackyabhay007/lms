@@ -54,12 +54,26 @@ This LMS is tailored to meet the needs of university students, providing a seaml
 - Event details including date, time, and description.
 - Option to RSVP for events.
 
-### 10. **Profile Screen**
+### 10. **Announcements Screen**
+- Professors can post announcements for students.
+- Students can view important updates like exam schedules, assignment deadlines, or event reminders.
+
+### 11. **Feedback Screen**
+- Students can provide feedback on courses, lectures, or the LMS itself.
+- Feedback can be categorized (e.g., course content, technical issues, etc.).
+
+### 12. **Resource Download Section**
+- A dedicated section for downloading additional resources like PDFs, slides, or e-books.
+
+### 13. **Bookmark Feature**
+- Students can bookmark specific lectures or content for quick access later.
+
+### 14. **Profile Screen**
 - Student details and subscription information.
 - Option to update personal information.
 - View subscription plan and renewal details.
 
-### 11. **Settings Screen**
+### 15. **Settings Screen**
 - Manage notification preferences.
 - Privacy settings to ensure adherence to strict policies.
 - Logout option.
