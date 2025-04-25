@@ -38,10 +38,6 @@
 - Lock the screen during tests to prevent minimizing or tab switching.
 - Strict privacy policies to ensure data security.
 
-### 9. **Subscription Model**
-- Implement a subscription-based access model for students.
-- Tiered plans for basic and advanced features.
-
 ### 10. **AI-Powered Career Guidance**
 - Personalized career recommendations based on student performance and interests.
 - Integration with job portals and internship platforms.
@@ -133,7 +129,7 @@
 ---
 
 ## Timeline
-- **Duration**: 2-3 Months
+- **Duration**: 3-4 Months
 - **Focus**: Advanced AI, scalability, and system optimization.
 
 ---
@@ -142,17 +138,19 @@
 
 ### Team Costs
 1. **Frontend Developers** (2 Full-Time):
-   - ₹40,000 per month × 3 months × 2 = ₹2,40,000
+   - ₹30,000 per month × 4 months × 2 = ₹2,40,000
 2. **Backend Developers** (2 Full-Time):
-   - ₹1,25,000 per month × 3 months × 2 = ₹7,50,000
+   - ₹85,000 per month × 4 months × 2 = ₹6,80,000
 3. **AI/ML Engineers** (2 Part-Time):
-   - ₹85,000 per month × 2 months × 2 = ₹3,40,000
+   - ₹80,000 per month × 2 months × 2 = ₹3,20,000
 4. **UI/UX Designer** (1 Part-Time):
    - ₹20,000 per month × 1 month = ₹20,000
 5. **QA Engineers** (2 Part-Time):
    - ₹20,000 per month × 2 months × 2 = ₹80,000
 6. **DevOps Engineer** (1 Part-Time):
    - ₹40,000 per month × 1 month = ₹40,000
+
+**Total Team Cost**: ₹13,80,000 -15,00,000
 
 ### Server and Third-Party Costs (Monthly)
 
